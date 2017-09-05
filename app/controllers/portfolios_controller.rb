@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+<<<<<<< HEAD
   def index
     @portfolio_items = Portfolio.all
   end
@@ -53,3 +54,6 @@ def edit
   end
 end
 
+=======
+end
+>>>>>>> resource-generator
