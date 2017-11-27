@@ -1,5 +1,9 @@
-<div class="container portfolio-form">
-  <h1>Edit this Portfolio Item</h1>
+<div class="album text-muted">
+  <div class="container">
+    <%= source_helper("alert alert-warning") %>
 
-  <%= render 'form', portfolio_item: @portfolio_item %>
+    <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </div>
+  </div>
 </div>
