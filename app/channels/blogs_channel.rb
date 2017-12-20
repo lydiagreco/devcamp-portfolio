@@ -1,5 +1,6 @@
 class BlogsChannel < ApplicationCable::Channel
   def subscribed
+    stream_from "blogs_#{params['blog.id']}_channel"
   end
 
   def unsubscribed
