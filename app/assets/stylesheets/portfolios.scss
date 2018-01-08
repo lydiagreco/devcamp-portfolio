@@ -15,11 +15,12 @@
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
   font-family: 'Lato', sans-serif;
+  background-color: black;
 }
 
 .navbar {
   margin-bottom: 0;
-}
+}s
 
 .jumbotron {
   padding-top: 6rem;
@@ -86,4 +87,15 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.portfolio-box{
+  border : 2px solid transparent;    
+  -webkit-transition : border 500ms ease-out; 
+  -moz-transition : border 500ms ease-out;
+  -o-transition : border 500ms ease-out;
+}
+
+.portfolio-box:hover{
+  border : 2px solid #d3d3d3;
 }
